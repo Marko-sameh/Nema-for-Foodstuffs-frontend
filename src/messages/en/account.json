@@ -1,0 +1,19 @@
+{
+  "myAccount": "My Account",
+  "nav": {
+    "profile": "Profile",
+    "orders": "Orders",
+    "addresses": "My Addresses",
+    "wishlist": "Wishlist",
+    "logout": "Logout"
+  },
+  "profile": {
+    "personalInfo": "Personal Information",
+    "updateDetails": "Update your basic profile details.",
+    "fullName": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "saving": "Saving...",
+    "saveChanges": "Save Changes"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "seo": {
+    "title": "Categories",
+    "description": "Explore all product categories available in our store."
+  },
+  "error": {
+    "title": "Error loading categories",
+    "description": "There was a problem loading the categories. Please try again later."
+  },
+  "empty": {
+    "title": "No categories found",
+    "description": "We couldn't find any categories at this time."
+  },
+  "subtitle": "Browse our wide selection of product categories to find exactly what you're looking for.",
+  "notFound": {
+    "title": "Category not found",
+    "description": "The category you are looking for does not exist or has been removed.",
+    "goBack": "Go Back"
+  },
+  "categorySubtitle": "Browse all products inside the {name} category. Use filters to narrow down your search.",
+  "filters": {
+    "title": "Filters",
+    "comingSoon": "More filters coming soon."
+  },
+  "eyebrow": "Category"
+}

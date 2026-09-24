@@ -1,0 +1,26 @@
+{
+  "seo": {
+    "title": "About Us",
+    "description": "Who we are, how we source our food, and what we promise every family we deliver to."
+  },
+  "eyebrow": "Our story",
+  "titleStart": "Real food,",
+  "titleAccent": "chosen with care",
+  "body": "We started with a simple idea: good ingredients should be easy to buy, honestly priced, and sold in the amount you actually need. We source from growers and suppliers we know, sell by the kilo, half or quarter, and deliver quickly so nothing loses its freshness.",
+  "cta": "Browse the shop",
+  "imageAlt": "Premium nuts, dates and spices",
+  "values": {
+    "quality": {
+      "title": "Quality first",
+      "body": "Every batch is tasted and checked before it reaches a shelf."
+    },
+    "trust": {
+      "title": "Honest pricing",
+      "body": "Clear prices by weight, with no surprises at checkout."
+    },
+    "delivery": {
+      "title": "Careful delivery",
+      "body": "Packed with care and delivered straight to your kitchen."
+    }
+  }
+}

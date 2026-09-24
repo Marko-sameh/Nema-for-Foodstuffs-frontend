@@ -1,0 +1,215 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "products": "Products",
+    "categories": "Categories",
+    "orders": "Orders",
+    "users": "Users",
+    "analytics": "Analytics",
+    "settings": "Settings",
+    "logout": "Logout"
+  },
+  "dashboard": "Dashboard",
+  "welcome": "Welcome back",
+  "analytics": {
+    "selectTimeframe": "Select timeframe",
+    "lastDays": "Last {days} days",
+    "revenueOverview": "Revenue Overview",
+    "dailyRevenueDesc": "Daily revenue for the last {days} days",
+    "noRevenueData": "No revenue data available",
+    "topSellingProducts": "Top Selling Products",
+    "topProductsDesc": "Highest revenue generating products",
+    "noProductData": "No product data available",
+    "unitsSold": "units sold",
+    "revenue": "Revenue"
+  },
+  "categories": {
+    "confirmDelete": "Are you sure you want to delete this category? This might affect products linked to it.",
+    "manageCategories": "Manage Categories",
+    "addCategory": "Add Category",
+    "table": {
+      "image": "Image",
+      "name": "Name",
+      "slug": "Slug",
+      "actions": "Actions"
+    },
+    "noCategoriesFound": "No categories found. Click \"Add Category\" to create one.",
+    "form": {
+      "editCategory": "Edit Category",
+      "addCategory": "Add New Category",
+      "name": "Category Name",
+      "namePlaceholder": "e.g. Fresh Fruits",
+      "slug": "URL Slug",
+      "slugPlaceholder": "e.g. fresh-fruits",
+      "description": "Description (Optional)",
+      "descriptionPlaceholder": "Brief description of this category",
+      "image": "Category Image (Optional)",
+      "cancel": "Cancel",
+      "saving": "Saving...",
+      "saveCategory": "Save Category"
+    }
+  },
+  "orders": {
+    "orderNotFound": "Order not found",
+    "returnToOrders": "Return to Orders",
+    "nav": {
+      "admin": "Admin",
+      "orders": "Orders"
+    },
+    "orderNumber": "Order #",
+    "status": {
+      "all": "All Statuses",
+      "pending": "Pending",
+      "confirmed": "Confirmed",
+      "processing": "Processing",
+      "shipped": "Shipped",
+      "delivered": "Delivered",
+      "cancelled": "Cancelled"
+    },
+    "updating": "Updating...",
+    "updateStatus": "Update Status",
+    "placedOn": "Placed on {date}",
+    "customerId": "Customer ID",
+    "paymentMethod": "Payment Method",
+    "paymentStatus": "Payment Status",
+    "orderItems": "Order Items",
+    "noItems": "No items found for this order.",
+    "summary": "Summary",
+    "subtotal": "Subtotal",
+    "deliveryFee": "Delivery Fee",
+    "discount": "Discount",
+    "total": "Total",
+    "deliveryAddress": "Delivery Address",
+    "addressId": "Address ID: {id}",
+    "viewFullAddress": "View Full Address Details",
+    "searchPlaceholder": "Search by order ID or customer...",
+    "filterStatus": "Filter by status",
+    "table": {
+      "orderId": "Order ID",
+      "date": "Date",
+      "customer": "Customer",
+      "total": "Total",
+      "status": "Status",
+      "actions": "Actions",
+      "view": "View"
+    },
+    "noOrdersFound": "No orders found.",
+    "pageInfo": "Page {page} of {totalPages}"
+  },
+  "products": {
+    "createProduct": "Create Product",
+    "createProductDesc": "Add a new product to your catalog.",
+    "create": "Create Product",
+    "edit": "Edit Product",
+    "nav": {
+      "dashboard": "Dashboard",
+      "products": "Products",
+      "create": "Create",
+      "edit": "Edit"
+    },
+    "productNotFound": "Product not found",
+    "editProduct": "Edit Product",
+    "editProductDesc": "Update details for {name}.",
+    "form": {
+      "name": "Product Name",
+      "sku": "SKU",
+      "brand": "Brand (Optional)",
+      "category": "Category",
+      "categoryPlaceholder": "Please select a category",
+      "pricePerKg": "Price per Kg",
+      "fixedPrice": "Fixed Price (Piece)",
+      "stock": "Stock (grams)",
+      "description": "Description",
+      "featured": "Featured Product",
+      "featuredDesc": "Display this product on the home page.",
+      "active": "Active",
+      "activeDesc": "Product is visible to customers.",
+      "saving": "Saving...",
+      "updateProduct": "Update Product",
+      "createProduct": "Create Product"
+    },
+    "table": {
+      "product": "Product",
+      "type": "Type",
+      "byWeight": "By Weight",
+      "byPiece": "By Piece",
+      "price": "Price",
+      "stock": "Stock",
+      "status": "Status",
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "title": "Products",
+    "manageProductsDesc": "Manage your product catalog, pricing, and stock.",
+    "addProduct": "Add Product",
+    "searchPlaceholder": "Search products by name or SKU...",
+    "selected": "selected",
+    "deleteSelected": "Delete Selected",
+    "noProductsFound": "No products found. Adjust your search or add a new product.",
+    "pageInfo": "Page {page} of {totalPages}",
+    "deleteProducts": "Delete Products",
+    "confirmDelete": "Are you sure you want to delete {count} product(s)? This action cannot be undone.",
+    "delete": "Delete"
+  },
+  "settings": {
+    "title": "Settings",
+    "description": "Manage global store configuration and preferences.",
+    "nav": {
+      "dashboard": "Dashboard",
+      "settings": "Settings"
+    },
+    "deliverySettings": "Delivery & Shipping Settings",
+    "loading": "Loading settings...",
+    "defaultShippingFee": "Default Shipping Fee",
+    "shippingFeeDesc": "This fee will be applied to all customer orders.",
+    "saving": "Saving...",
+    "saveSettings": "Save Settings"
+  },
+  "users": {
+    "confirmRoleChange": "Are you sure you want to change this user's role to {role}?",
+    "confirmDelete": "Are you sure you want to delete this user? This action cannot be undone.",
+    "table": {
+      "user": "User",
+      "email": "Email",
+      "phone": "Phone",
+      "joined": "Joined",
+      "role": "Role",
+      "actions": "Actions"
+    },
+    "unnamedUser": "Unnamed User",
+    "changeRole": "Change to {role}",
+    "deleteUser": "Delete User",
+    "searchPlaceholder": "Search by name or email...",
+    "filterRole": "Filter by role",
+    "roles": {
+      "all": "All Roles",
+      "customer": "Customer",
+      "admin": "Admin"
+    },
+    "errorLoading": "Error loading users",
+    "noUsersFound": "No users found.",
+    "pageInfo": "Page {page} of {totalPages}"
+  },
+  "dashboardPage": {
+    "totalRevenue": "Total Revenue",
+    "fromLastMonth": "% from last month",
+    "orders": "Orders",
+    "customers": "Customers",
+    "activeUsers": "Active users",
+    "products": "Products",
+    "inStock": "In stock",
+    "recentOrders": "Recent Orders",
+    "viewAll": "View All",
+    "table": {
+      "orderId": "Order ID",
+      "date": "Date",
+      "status": "Status",
+      "amount": "Amount"
+    },
+    "noRecentOrders": "No recent orders found."
+  },
+  "misc": {
+    "toggleMenu": "Toggle menu",
+    "adminLabel": "Admin"
+  }
+}

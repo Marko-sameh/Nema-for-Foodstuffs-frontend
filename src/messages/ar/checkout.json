@@ -1,0 +1,29 @@
+{
+  "title": "إتمام الطلب",
+  "subtitle": "أكمل بيانات طلبك.",
+  "address": "العنوان",
+  "emptyCart": "سلة التسوق فاضية",
+  "browseProducts": "تصفح المنتجات",
+  "deliveryAddress": "عنوان التوصيل",
+  "deliveryDesc": "اختر العنوان اللي عايز طلبك يوصله.",
+  "paymentMethod": "طريقة الدفع",
+  "payment": {
+    "cod": "الدفع عند الاستلام",
+    "codOnlyDesc": "دي طريقة الدفع المتاحة حالياً. ادفع كاش لما يوصلك الطلب."
+  },
+  "additionalOptions": "خيارات إضافية",
+  "promoCode": "كود الخصم (اختياري)",
+  "enterCode": "اكتب الكود",
+  "applying": "جارِ التطبيق...",
+  "apply": "تطبيق",
+  "couponApplied": "تم تطبيق كود \"{code}\": -{amount}",
+  "orderNotes": "ملاحظات على الطلب (اختياري)",
+  "specialInstructions": "أي تعليمات خاصة بالتوصيل...",
+  "orderSummary": "ملخص الطلب",
+  "subtotal": "المجموع الفرعي",
+  "delivery": "التوصيل",
+  "discount": "الخصم",
+  "totalToPay": "الإجمالي المطلوب دفعه",
+  "processing": "جارِ التنفيذ...",
+  "placeOrder": "تأكيد الطلب"
+}

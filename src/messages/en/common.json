@@ -1,0 +1,113 @@
+{
+  "announcement": "Free delivery on orders over 500 EGP • Freshly sourced, always delicious",
+  "searchPlaceholder": "Search products...",
+  "notFoundTitle": "Page Not Found",
+  "notFoundDesc": "The page you are looking for does not exist or has been moved.",
+  "goHome": "Go to Home",
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "categories": "Categories",
+    "cart": "Cart",
+    "account": "My Account",
+    "orders": "Track Order",
+    "contact": "Contact Us",
+    "wishlist": "Wishlist",
+    "profile": "Profile",
+    "about": "About Us"
+  },
+  "footer": {
+    "about": "Premium foodstuffs and groceries delivered directly to your door with the highest quality standards.",
+    "quickLinks": "Quick Links",
+    "customerService": "Customer Service",
+    "contactInfo": "Contact Info",
+    "rights": "All rights reserved.",
+    "address": "Cairo, Egypt"
+  },
+  "hero": {
+    "badge": "Locked-in freshness",
+    "titleLine1": "Good food,",
+    "titleLine2": "ready when",
+    "titleLine3": "you are.",
+    "subtitle": "Spices, herbs, and select goods — by the kilo, half, or quarter.",
+    "cta": "Browse Products",
+    "secondaryCta": "Shop by category",
+    "imageAlt": "Fresh spices, nuts and herbs",
+    "cardOneTitle": "Picked at peak",
+    "cardOneValue": "Freshly sourced",
+    "cardTwoTitle": "Fast delivery",
+    "cardTwoSubtitle": "From us to your kitchen",
+    "stats": {
+      "products": {
+        "value": "+200",
+        "label": "Available Products"
+      },
+      "hidden": {
+        "value": "0",
+        "label": "Hidden extras"
+      },
+      "rating": {
+        "value": "4.9",
+        "label": "Happy families"
+      }
+    }
+  },
+  "brand": {
+    "logo": "N",
+    "name": "Ne'ma",
+    "subtitle": "Foodstuffs"
+  },
+  "categories": {
+    "title": "Categories",
+    "eyebrow": "Shop by category",
+    "viewAll": "View All"
+  },
+  "product": {
+    "selectWeightFirst": "Select a weight first",
+    "addedToCart": "{name} added to cart",
+    "kg": "kg",
+    "badges": {
+      "featured": "Featured",
+      "byWeight": "By Weight"
+    },
+    "types": {
+      "weight": "Per Kilo",
+      "piece": "Per Piece"
+    }
+  },
+  "actions": {
+    "add": "Add",
+    "view": "View"
+  },
+  "errors": {
+    "title": "Something went wrong",
+    "description": "An unexpected error occurred while loading this page. Please try again.",
+    "retry": "Try again",
+    "goHome": "Go to Home",
+    "globalTitle": "Application Error",
+    "globalDescription": "A critical error occurred. Please reload the page."
+  },
+  "loading": {
+    "label": "Loading..."
+  },
+  "forms": {
+    "dropFiles": "Drop files here…",
+    "dragDrop": "Drag & drop or click to browse",
+    "fileConstraints": "JPG, PNG, WEBP · max {size} MB",
+    "upToFiles": " · up to {count} files",
+    "selectOption": "Select an option"
+  },
+  "auth": {
+    "logout": "Logout"
+  },
+  "misc": {
+    "redirecting": "Redirecting...",
+    "redirectingToLogin": "Redirecting to login...",
+    "toggleMenu": "Toggle menu",
+    "adminLabel": "Admin"
+  },
+  "seo": {
+    "homeTitle": "{defaultMessage}",
+    "homeDescription": "{defaultMessage}"
+  }
+}

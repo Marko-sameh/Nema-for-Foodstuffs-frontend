@@ -1,0 +1,29 @@
+{
+  "title": "Checkout",
+  "subtitle": "Complete your order details.",
+  "address": "Address",
+  "emptyCart": "Your cart is empty",
+  "browseProducts": "Browse Products",
+  "deliveryAddress": "Delivery Address",
+  "deliveryDesc": "Select where you want your order delivered.",
+  "paymentMethod": "Payment Method",
+  "payment": {
+    "cod": "Cash on Delivery (COD)",
+    "codOnlyDesc": "Currently the only available payment method. Pay in cash when your order arrives."
+  },
+  "additionalOptions": "Additional Options",
+  "promoCode": "Promo Code (Optional)",
+  "enterCode": "Enter code",
+  "applying": "Applying...",
+  "apply": "Apply",
+  "couponApplied": "Coupon \"{code}\" applied: -{amount}",
+  "orderNotes": "Order Notes (Optional)",
+  "specialInstructions": "Any special instructions for delivery...",
+  "orderSummary": "Order Summary",
+  "subtotal": "Subtotal",
+  "delivery": "Delivery",
+  "discount": "Discount",
+  "totalToPay": "Total to Pay",
+  "processing": "Processing...",
+  "placeOrder": "Place Order"
+}

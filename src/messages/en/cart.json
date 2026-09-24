@@ -1,0 +1,19 @@
+{
+  "summary": "Order Summary",
+  "subtotal": "Subtotal",
+  "delivery": "Delivery Fee",
+  "total": "Total",
+  "checkout": "Proceed to Checkout",
+  "errorTitle": "Could not load your cart",
+  "errorDesc": "Something went wrong while fetching your cart. Please try again.",
+  "retry": "Try Again",
+  "emptyTitle": "Your cart is empty",
+  "emptyDesc": "Looks like you haven't added anything to your cart yet. Browse our products and find something you love!",
+  "startShopping": "Start Shopping",
+  "title": "Shopping Cart",
+  "subtitle": "Review your items before checkout.",
+  "noImage": "No image",
+  "byWeight": "By Weight",
+  "byPiece": "By Piece",
+  "each": "each"
+}

@@ -1,0 +1,9 @@
+{
+  "seo": {
+    "description": "View the products you have saved for later."
+  },
+  "emptyTitle": "Your wishlist is empty",
+  "emptyDescription": "Save items you love to your wishlist. Review them anytime and easily move them to your cart.",
+  "exploreProducts": "Explore Products",
+  "unavailable": "The items in your wishlist are currently unavailable."
+}

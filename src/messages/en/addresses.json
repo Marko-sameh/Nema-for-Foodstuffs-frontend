@@ -1,0 +1,30 @@
+{
+  "nav": {
+    "addresses": "My Addresses"
+  },
+  "confirmDelete": "Are you sure you want to delete this address?",
+  "addAddress": "Add New Address",
+  "empty": {
+    "title": "No addresses saved",
+    "description": "Add an address so we know where to deliver your fresh groceries.",
+    "action": "Add Address"
+  },
+  "defaultBadge": "Default",
+  "edit": "Edit",
+  "delete": "Delete",
+  "form": {
+    "editTitle": "Edit Address",
+    "addTitle": "Add New Address",
+    "label": "Address Label",
+    "labelPlaceholder": "e.g. Home, Work",
+    "street": "Street Address",
+    "streetPlaceholder": "Building, Street, Area",
+    "city": "City",
+    "state": "State/Province (Optional)",
+    "postalCode": "Postal Code (Optional)",
+    "isDefault": "Set as default address",
+    "cancel": "Cancel",
+    "saving": "Saving...",
+    "submit": "Save Address"
+  }
+}

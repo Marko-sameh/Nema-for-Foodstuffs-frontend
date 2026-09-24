@@ -1,0 +1,26 @@
+{
+  "title": "My Orders",
+  "notFound": {
+    "title": "Order not found",
+    "description": "We couldn't find the details for this order.",
+    "back": "Back to Orders"
+  },
+  "nav": {
+    "orders": "Orders"
+  },
+  "orderNumber": "Order #",
+  "placedOn": "Placed on ",
+  "payment": "Payment:",
+  "orderItems": "Order Items",
+  "summary": "Summary",
+  "subtotal": "Subtotal",
+  "deliveryFee": "Delivery Fee",
+  "discount": "Discount",
+  "total": "Total",
+  "empty": {
+    "title": "No orders yet",
+    "description": "You haven't placed any orders yet. Start exploring our fresh products!",
+    "action": "Start Shopping"
+  },
+  "viewDetails": "View Details"
+}

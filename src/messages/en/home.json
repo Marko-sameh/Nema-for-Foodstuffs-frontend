@@ -1,0 +1,38 @@
+{
+  "featured": {
+    "title": "Featured Products",
+    "eyebrow": "Freezer favourites",
+    "subtitle": "Hand-picked fresh produce just for you.",
+    "viewAll": "View All"
+  },
+  "newsletter": {
+    "successTitle": "Thanks for subscribing!",
+    "successDescription": "You will receive our latest offers soon.",
+    "eyebrow": "Join the table",
+    "title": "Stay Fresh, Stay Updated",
+    "description": "Subscribe to our newsletter and get 10% off your first order, plus exclusive weekly deals on fresh produce.",
+    "emailPlaceholder": "Enter your email address",
+    "subscribing": "Subscribing...",
+    "subscribe": "Subscribe"
+  },
+  "promise": {
+    "items": {
+      "fresh": {
+        "title": "Sourced at peak season",
+        "body": "We buy in season and store it right, so flavour stays where it belongs."
+      },
+      "clean": {
+        "title": "Nothing but the good stuff",
+        "body": "No fillers, no mystery additives — just clean, honest ingredients."
+      },
+      "honest": {
+        "title": "Honest pricing",
+        "body": "Clear prices by the kilo, half or quarter. No hidden extras at checkout."
+      }
+    },
+    "imageAlt": "Close-up of premium nuts and dates",
+    "eyebrow": "Our promise",
+    "titleStart": "Why families",
+    "titleAccent": "keep coming back"
+  }
+}

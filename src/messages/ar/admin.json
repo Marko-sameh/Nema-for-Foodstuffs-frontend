@@ -1,0 +1,215 @@
+{
+  "nav": {
+    "dashboard": "لوحة القيادة",
+    "products": "المنتجات",
+    "categories": "التصنيفات",
+    "orders": "الطلبات",
+    "users": "المستخدمين",
+    "analytics": "التحليلات",
+    "settings": "الإعدادات",
+    "logout": "تسجيل الخروج"
+  },
+  "dashboard": "لوحة القيادة",
+  "welcome": "مرحباً بعودتك",
+  "analytics": {
+    "selectTimeframe": "اختر المدة الزمنية",
+    "lastDays": "آخر {days} يوم",
+    "revenueOverview": "نظرة عامة على الإيرادات",
+    "dailyRevenueDesc": "الإيرادات اليومية لآخر {days} يوم",
+    "noRevenueData": "لا توجد بيانات إيرادات متاحة",
+    "topSellingProducts": "أكثر المنتجات مبيعًا",
+    "topProductsDesc": "المنتجات الأعلى في الإيرادات",
+    "noProductData": "لا توجد بيانات منتجات متاحة",
+    "unitsSold": "وحدة مباعة",
+    "revenue": "الإيرادات"
+  },
+  "categories": {
+    "confirmDelete": "متأكد إنك عايز تحذف القسم ده؟ ده ممكن يأثر على المنتجات المرتبطة بيه.",
+    "manageCategories": "إدارة الأقسام",
+    "addCategory": "إضافة قسم",
+    "table": {
+      "image": "الصورة",
+      "name": "الاسم",
+      "slug": "الرابط المختصر",
+      "actions": "الإجراءات"
+    },
+    "noCategoriesFound": "لا توجد أقسام. اضغط \"إضافة قسم\" لإنشاء واحد.",
+    "form": {
+      "editCategory": "تعديل القسم",
+      "addCategory": "إضافة قسم جديد",
+      "name": "اسم القسم",
+      "namePlaceholder": "مثال: فواكه طازجة",
+      "slug": "الرابط المختصر",
+      "slugPlaceholder": "مثال: fresh-fruits",
+      "description": "الوصف (اختياري)",
+      "descriptionPlaceholder": "وصف مختصر لهذا القسم",
+      "image": "صورة القسم (اختياري)",
+      "cancel": "إلغاء",
+      "saving": "جارِ الحفظ...",
+      "saveCategory": "احفظ القسم"
+    }
+  },
+  "orders": {
+    "orderNotFound": "الطلب غير موجود",
+    "returnToOrders": "العودة للطلبات",
+    "nav": {
+      "admin": "الإدارة",
+      "orders": "الطلبات"
+    },
+    "orderNumber": "طلب رقم #",
+    "status": {
+      "all": "كل الحالات",
+      "pending": "قيد الانتظار",
+      "confirmed": "تم التأكيد",
+      "processing": "قيد التجهيز",
+      "shipped": "تم الشحن",
+      "delivered": "تم التوصيل",
+      "cancelled": "ملغي"
+    },
+    "updating": "جارِ التحديث...",
+    "updateStatus": "تحديث الحالة",
+    "placedOn": "تم الطلب في {date}",
+    "customerId": "رقم العميل",
+    "paymentMethod": "طريقة الدفع",
+    "paymentStatus": "حالة الدفع",
+    "orderItems": "منتجات الطلب",
+    "noItems": "لا توجد منتجات في هذا الطلب.",
+    "summary": "الملخص",
+    "subtotal": "المجموع الفرعي",
+    "deliveryFee": "رسوم التوصيل",
+    "discount": "الخصم",
+    "total": "المجموع",
+    "deliveryAddress": "عنوان التوصيل",
+    "addressId": "رقم العنوان: {id}",
+    "viewFullAddress": "عرض تفاصيل العنوان بالكامل",
+    "searchPlaceholder": "ابحث برقم الطلب أو اسم العميل...",
+    "filterStatus": "فلترة حسب الحالة",
+    "table": {
+      "orderId": "رقم الطلب",
+      "date": "التاريخ",
+      "customer": "العميل",
+      "total": "الإجمالي",
+      "status": "الحالة",
+      "actions": "الإجراءات",
+      "view": "عرض"
+    },
+    "noOrdersFound": "لا توجد طلبات.",
+    "pageInfo": "صفحة {page} من {totalPages}"
+  },
+  "products": {
+    "createProduct": "إنشاء منتج",
+    "createProductDesc": "أضف منتج جديد لكتالوجك.",
+    "create": "إنشاء منتج",
+    "edit": "تعديل المنتج",
+    "nav": {
+      "dashboard": "لوحة القيادة",
+      "products": "المنتجات",
+      "create": "إنشاء",
+      "edit": "تعديل"
+    },
+    "productNotFound": "المنتج غير موجود",
+    "editProduct": "تعديل المنتج",
+    "editProductDesc": "حدّث بيانات {name}.",
+    "form": {
+      "name": "اسم المنتج",
+      "sku": "رمز المنتج (SKU)",
+      "brand": "العلامة التجارية (اختياري)",
+      "category": "القسم",
+      "categoryPlaceholder": "من فضلك اختر قسم",
+      "pricePerKg": "السعر لكل كيلو",
+      "fixedPrice": "سعر ثابت (بالقطعة)",
+      "stock": "المخزون (جرام)",
+      "description": "الوصف",
+      "featured": "منتج مميز",
+      "featuredDesc": "اعرض هذا المنتج في الصفحة الرئيسية.",
+      "active": "نشط",
+      "activeDesc": "المنتج ظاهر للعملاء.",
+      "saving": "جارِ الحفظ...",
+      "updateProduct": "تحديث المنتج",
+      "createProduct": "إنشاء المنتج"
+    },
+    "table": {
+      "product": "المنتج",
+      "type": "النوع",
+      "byWeight": "بالوزن",
+      "byPiece": "بالقطعة",
+      "price": "السعر",
+      "stock": "المخزون",
+      "status": "الحالة",
+      "active": "نشط",
+      "inactive": "غير نشط"
+    },
+    "title": "المنتجات",
+    "manageProductsDesc": "أدر كتالوج منتجاتك وأسعارها ومخزونها.",
+    "addProduct": "إضافة منتج",
+    "searchPlaceholder": "ابحث عن منتج بالاسم أو الرمز...",
+    "selected": "محدد",
+    "deleteSelected": "حذف المحدد",
+    "noProductsFound": "لا توجد منتجات. عدّل البحث أو أضف منتج جديد.",
+    "pageInfo": "صفحة {page} من {totalPages}",
+    "deleteProducts": "حذف المنتجات",
+    "confirmDelete": "متأكد إنك عايز تحذف {count} منتج؟ الإجراء ده مينفعش يترجع فيه.",
+    "delete": "حذف"
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "description": "إدارة الإعدادات العامة وتفضيلات المتجر.",
+    "nav": {
+      "dashboard": "لوحة القيادة",
+      "settings": "الإعدادات"
+    },
+    "deliverySettings": "إعدادات التوصيل والشحن",
+    "loading": "جارِ تحميل الإعدادات...",
+    "defaultShippingFee": "رسوم الشحن الافتراضية",
+    "shippingFeeDesc": "هيتم تطبيق هذه الرسوم على كل طلبات العملاء.",
+    "saving": "جارِ الحفظ...",
+    "saveSettings": "احفظ الإعدادات"
+  },
+  "users": {
+    "confirmRoleChange": "متأكد إنك عايز تغيّر دور هذا المستخدم إلى {role}؟",
+    "confirmDelete": "متأكد إنك عايز تحذف هذا المستخدم؟ الإجراء ده مينفعش يترجع فيه.",
+    "table": {
+      "user": "المستخدم",
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف",
+      "joined": "تاريخ الانضمام",
+      "role": "الدور",
+      "actions": "الإجراءات"
+    },
+    "unnamedUser": "مستخدم بدون اسم",
+    "changeRole": "تغيير إلى {role}",
+    "deleteUser": "حذف المستخدم",
+    "searchPlaceholder": "ابحث بالاسم أو البريد الإلكتروني...",
+    "filterRole": "فلترة حسب الدور",
+    "roles": {
+      "all": "كل الأدوار",
+      "customer": "عميل",
+      "admin": "إدارة"
+    },
+    "errorLoading": "حدث خطأ أثناء تحميل المستخدمين",
+    "noUsersFound": "لا يوجد مستخدمين.",
+    "pageInfo": "صفحة {page} من {totalPages}"
+  },
+  "dashboardPage": {
+    "totalRevenue": "إجمالي الإيرادات",
+    "fromLastMonth": "% عن الشهر الماضي",
+    "orders": "الطلبات",
+    "customers": "العملاء",
+    "activeUsers": "مستخدمين نشطين",
+    "products": "المنتجات",
+    "inStock": "متوفر بالمخزون",
+    "recentOrders": "أحدث الطلبات",
+    "viewAll": "عرض الكل",
+    "table": {
+      "orderId": "رقم الطلب",
+      "date": "التاريخ",
+      "status": "الحالة",
+      "amount": "المبلغ"
+    },
+    "noRecentOrders": "لا توجد طلبات حديثة."
+  },
+  "misc": {
+    "toggleMenu": "تبديل القائمة",
+    "adminLabel": "الإدارة"
+  }
+}

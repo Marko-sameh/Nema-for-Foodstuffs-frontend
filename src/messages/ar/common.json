@@ -1,0 +1,113 @@
+{
+  "announcement": "توصيل مجاني للطلبات أكثر من 500 جنيه • مكونات طازجة، ودايماً لذيذة",
+  "searchPlaceholder": "ابحث عن المنتجات...",
+  "notFoundTitle": "الصفحة غير موجودة",
+  "notFoundDesc": "الصفحة التي تبحث عنها غير موجودة أو تم نقلها.",
+  "goHome": "العودة للرئيسية",
+  "nav": {
+    "home": "الرئيسية",
+    "products": "المنتجات",
+    "categories": "الفئات",
+    "cart": "عربة التسوق",
+    "account": "حسابي",
+    "orders": "تتبع الطلب",
+    "contact": "اتصل بنا",
+    "wishlist": "المفضلة",
+    "profile": "الملف الشخصي",
+    "about": "عن نعمة"
+  },
+  "footer": {
+    "about": "مواد غذائية وبقالة فاخرة تصلك مباشرة إلى باب منزلك بأعلى معايير الجودة.",
+    "quickLinks": "روابط سريعة",
+    "customerService": "خدمة العملاء",
+    "contactInfo": "معلومات الاتصال",
+    "rights": "جميع الحقوق محفوظة.",
+    "address": "القاهرة، مصر"
+  },
+  "hero": {
+    "badge": "طزاجة مضمونة",
+    "titleLine1": "غذاء طيب،",
+    "titleLine2": "جاهز وقتما",
+    "titleLine3": "أردت.",
+    "subtitle": "بهارات، أعشاب، وبضائع مختارة — بالكيلو، النص، أو الربع كيلو.",
+    "cta": "تصفح المنتجات",
+    "secondaryCta": "تسوق حسب القسم",
+    "imageAlt": "بهارات، مكسرات، وأعشاب طازجة",
+    "cardOneTitle": "مقطوفة بعناية",
+    "cardOneValue": "مصادر طازجة",
+    "cardTwoTitle": "توصيل سريع",
+    "cardTwoSubtitle": "من مطبخنا لمطبخك",
+    "stats": {
+      "products": {
+        "value": "+200",
+        "label": "منتج متاح"
+      },
+      "hidden": {
+        "value": "0",
+        "label": "مصاريف خفية"
+      },
+      "rating": {
+        "value": "4.9",
+        "label": "عائلات سعيدة"
+      }
+    }
+  },
+  "brand": {
+    "logo": "ن",
+    "name": "نعمة",
+    "subtitle": "للمواد الغذائية"
+  },
+  "categories": {
+    "title": "الأقسام",
+    "eyebrow": "تسوق حسب القسم",
+    "viewAll": "عرض الكل"
+  },
+  "product": {
+    "selectWeightFirst": "اختر وزنًا أولاً",
+    "addedToCart": "تم إضافة {name} للسلة",
+    "kg": "ك",
+    "badges": {
+      "featured": "مميز",
+      "byWeight": "بالوزن"
+    },
+    "types": {
+      "weight": "بالكيلو",
+      "piece": "بالقطعة"
+    }
+  },
+  "actions": {
+    "add": "أضف",
+    "view": "عرض"
+  },
+  "errors": {
+    "title": "حدث خطأ ما",
+    "description": "حدث خطأ غير متوقع أثناء تحميل هذه الصفحة. برجاء المحاولة تاني.",
+    "retry": "إعادة المحاولة",
+    "goHome": "العودة للرئيسية",
+    "globalTitle": "خطأ في التطبيق",
+    "globalDescription": "حدث خطأ حرج. برجاء إعادة تحميل الصفحة."
+  },
+  "loading": {
+    "label": "جارِ التحميل..."
+  },
+  "forms": {
+    "dropFiles": "اسحب الملفات هنا…",
+    "dragDrop": "اسحب وأفلت الصور هنا أو اضغط للاختيار",
+    "fileConstraints": "JPG أو PNG أو WEBP · بحد أقصى {size} ميجا",
+    "upToFiles": " · وحتى {count} ملفات",
+    "selectOption": "اختر خيار"
+  },
+  "auth": {
+    "logout": "تسجيل الخروج"
+  },
+  "misc": {
+    "redirecting": "جاري التحويل...",
+    "redirectingToLogin": "جاري التحويل لتسجيل الدخول...",
+    "toggleMenu": "تبديل القائمة",
+    "adminLabel": "الإدارة"
+  },
+  "seo": {
+    "homeTitle": "{defaultMessage}",
+    "homeDescription": "{defaultMessage}"
+  }
+}

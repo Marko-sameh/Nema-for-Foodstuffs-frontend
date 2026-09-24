@@ -1,0 +1,19 @@
+{
+  "myAccount": "حسابي",
+  "nav": {
+    "profile": "الملف الشخصي",
+    "orders": "الطلبات",
+    "addresses": "عناويني",
+    "wishlist": "المفضلة",
+    "logout": "تسجيل الخروج"
+  },
+  "profile": {
+    "personalInfo": "البيانات الشخصية",
+    "updateDetails": "حدّث بيانات ملفك الشخصي.",
+    "fullName": "الاسم بالكامل",
+    "email": "البريد الإلكتروني",
+    "phone": "رقم الهاتف",
+    "saving": "جارِ الحفظ...",
+    "saveChanges": "احفظ التغييرات"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "title": "Search Results",
+  "seo": {
+    "description": "Search for products across our full catalog."
+  },
+  "filters": "Filters",
+  "moreFiltersSoon": "More filters coming soon.",
+  "loading": "Loading search..."
+}
