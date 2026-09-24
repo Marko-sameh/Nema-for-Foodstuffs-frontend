@@ -12,9 +12,11 @@ export interface User {
 export interface Address {
   id: string;
   label: string;
+  fullName: string;
+  phone: string;
   street: string;
   city: string;
-  state?: string;
+  governorate: string;
   postalCode?: string;
   isDefault: boolean;
 }

@@ -104,10 +104,12 @@
     "redirecting": "Redirecting...",
     "redirectingToLogin": "Redirecting to login...",
     "toggleMenu": "Toggle menu",
-    "adminLabel": "Admin"
+    "adminLabel": "Admin",
+    "switchLanguage": "Switch Language"
   },
   "seo": {
     "homeTitle": "{defaultMessage}",
-    "homeDescription": "{defaultMessage}"
+    "homeDescription": "{defaultMessage}",
+    "wishlistDescription": "{defaultMessage}"
   }
 }

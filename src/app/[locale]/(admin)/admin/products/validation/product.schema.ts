@@ -12,6 +12,7 @@ export const adminProductSchema = z.object({
   stockInGrams: z.number().nonnegative(),
   isFeatured: z.boolean(),
   isActive: z.boolean(),
+  thumbnailUrl: z.string().url('Please enter a valid URL').optional().or(z.literal('')),
 }).refine(
   (data) => (data.unitType === 'PIECE' ? !!data.fixedPrice : !!data.pricePerKg),
   {

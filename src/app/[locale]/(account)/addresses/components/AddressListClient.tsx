@@ -61,7 +61,7 @@ export function AddressListClient() {
     );
   }
 
-  const addresses = data?.data || [];
+  const addresses = data || [];
 
   return (
     <div className="space-y-6">
@@ -99,11 +99,14 @@ export function AddressListClient() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg">{address.label}</h3>
-                  <p className="text-muted-foreground mt-1 leading-relaxed">
+                  <div className="text-muted-foreground mt-1 leading-relaxed">
+                    <p className="text-sm font-medium mb-1 text-foreground">
+                      {address.fullName} • {address.phone}
+                    </p>
                     {address.street} <br />
-                    {address.city}{address.state ? `, ${address.state}` : ''} <br />
+                    {address.city}{address.governorate ? `, ${address.governorate}` : ''} <br />
                     {address.postalCode}
-                  </p>
+                  </div>
                 </div>
               </div>
 

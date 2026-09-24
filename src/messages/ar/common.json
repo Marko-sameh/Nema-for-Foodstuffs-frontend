@@ -104,10 +104,12 @@
     "redirecting": "جاري التحويل...",
     "redirectingToLogin": "جاري التحويل لتسجيل الدخول...",
     "toggleMenu": "تبديل القائمة",
-    "adminLabel": "الإدارة"
+    "adminLabel": "الإدارة",
+    "switchLanguage": "تغيير اللغة"
   },
   "seo": {
     "homeTitle": "{defaultMessage}",
-    "homeDescription": "{defaultMessage}"
+    "homeDescription": "{defaultMessage}",
+    "wishlistDescription": "{defaultMessage}"
   }
 }

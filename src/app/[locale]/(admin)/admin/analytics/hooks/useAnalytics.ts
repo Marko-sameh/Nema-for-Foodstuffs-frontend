@@ -20,7 +20,7 @@ export function useRevenueAnalytics(days: number = 30) {
   return useQuery({
     queryKey: [...ADMIN_ANALYTICS_CONFIG.queryKeys.revenue, days],
     queryFn: async () => {
-      return api.get<ApiResponse<RevenueDataPoint[]>>(`${ADMIN_ANALYTICS_CONFIG.endpoints.revenue}?days=${days}`);
+      return api.get<RevenueDataPoint[]>(`${ADMIN_ANALYTICS_CONFIG.endpoints.revenue}?days=${days}`);
     },
   });
 }
@@ -29,7 +29,7 @@ export function useTopProducts() {
   return useQuery({
     queryKey: ADMIN_ANALYTICS_CONFIG.queryKeys.topProducts,
     queryFn: async () => {
-      return api.get<ApiResponse<TopProduct[]>>(ADMIN_ANALYTICS_CONFIG.endpoints.topProducts);
+      return api.get<TopProduct[]>(ADMIN_ANALYTICS_CONFIG.endpoints.topProducts);
     },
   });
 }

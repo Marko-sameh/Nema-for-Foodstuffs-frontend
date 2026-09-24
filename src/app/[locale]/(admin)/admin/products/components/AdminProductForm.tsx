@@ -97,7 +97,8 @@ export function AdminProductForm({ initialData, onSubmit, isPending, error }: Ad
                 type="number"
                 step="0.01"
                 {...field}
-                onChange={(e) => field.onChange(e.target.valueAsNumber)}
+                value={field.value ?? ''}
+                onChange={(e) => field.onChange(isNaN(e.target.valueAsNumber) ? undefined : e.target.valueAsNumber)}
               />
             )}
           />
@@ -110,7 +111,8 @@ export function AdminProductForm({ initialData, onSubmit, isPending, error }: Ad
                 type="number"
                 step="0.01"
                 {...field}
-                onChange={(e) => field.onChange(e.target.valueAsNumber)}
+                value={field.value ?? ''}
+                onChange={(e) => field.onChange(isNaN(e.target.valueAsNumber) ? undefined : e.target.valueAsNumber)}
               />
             )}
           />
@@ -122,7 +124,8 @@ export function AdminProductForm({ initialData, onSubmit, isPending, error }: Ad
               <Input
                 type="number"
                 {...field}
-                onChange={(e) => field.onChange(e.target.valueAsNumber)}
+                value={field.value ?? ''}
+                onChange={(e) => field.onChange(isNaN(e.target.valueAsNumber) ? undefined : e.target.valueAsNumber)}
               />
             )}
           />

@@ -12,7 +12,7 @@ export function usePlaceOrder() {
   const router = useRouter();
 
   return useMutation({
-    mutationFn: (payload: CheckoutFormValues) => {
+    mutationFn: (payload: CheckoutFormValues & { items: Array<{ productId: string; variantId?: string | null; quantity: number }> }) => {
       const idempotencyKey = crypto.randomUUID();
       return CheckoutAPI.createOrder(payload, idempotencyKey);
     },

@@ -6,11 +6,11 @@ export interface SettingsData {
 }
 
 export class SettingsAPI {
-  static async fetchSettings(): Promise<{ success: boolean; data: SettingsData }> {
-    return api.get<{ success: boolean; data: SettingsData }>('/settings');
+  static async fetchSettings(): Promise<SettingsData> {
+    return api.get<SettingsData>('/settings');
   }
 
-  static async updateSettings(data: Partial<SettingsData>): Promise<{ success: boolean; data: SettingsData }> {
-    return api.patch<{ success: boolean; data: SettingsData }>('/settings/admin', data);
+  static async updateSettings(data: Partial<SettingsData>): Promise<SettingsData> {
+    return api.patch<SettingsData>('/settings/admin', data);
   }
 }

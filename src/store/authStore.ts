@@ -41,7 +41,7 @@ interface AuthState {
 
 export const useAuthStore = create<AuthState>()(
   persist(
-    (set) => ({
+    (set, get) => ({
       user: null,
       accessToken: null,
       isAuthenticated: false,
@@ -51,12 +51,17 @@ export const useAuthStore = create<AuthState>()(
       },
       setToken: (accessToken) => set({ accessToken, isAuthenticated: !!accessToken }),
       logout: async () => {
+        const token = get().accessToken;
         try {
           // Attempt backend logout to clear httpOnly cookies
           const baseURL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api/v1';
+          const headers: Record<string, string> = { 'Content-Type': 'application/json' };
+          if (token) {
+            headers['Authorization'] = `Bearer ${token}`;
+          }
           await fetch(`${baseURL}/auth/logout`, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers,
             credentials: 'include',
           });
         } catch (error) {

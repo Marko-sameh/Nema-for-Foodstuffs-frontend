@@ -35,7 +35,7 @@ export function useAdminOrderDetail(id: string) {
   return useQuery({
     queryKey: ADMIN_ORDERS_CONFIG.queryKeys.detail(id),
     queryFn: async () => {
-      return api.get<ApiResponse<Order>>(ADMIN_ORDERS_CONFIG.endpoints.detail(id));
+      return api.get<Order>(ADMIN_ORDERS_CONFIG.endpoints.detail(id));
     },
     enabled: !!id,
   });
@@ -46,7 +46,7 @@ export function useUpdateOrderStatus() {
 
   return useMutation({
     mutationFn: async ({ id, status }: { id: string; status: OrderStatus }) => {
-      return api.patch<ApiResponse<Order>>(ADMIN_ORDERS_CONFIG.endpoints.updateStatus(id), { status });
+      return api.patch<Order>(ADMIN_ORDERS_CONFIG.endpoints.updateStatus(id), { status });
     },
     onSuccess: (_, variables) => {
       toast.success(`Order status updated to ${variables.status}`);

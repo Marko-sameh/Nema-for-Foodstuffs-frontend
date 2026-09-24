@@ -7,7 +7,7 @@ export function useSettings() {
     queryKey: ['store-settings'],
     queryFn: async () => {
       const response = await SettingsAPI.fetchSettings();
-      return response.data; // Ensure we extract the data property
+      return response; // Data is already extracted by api.get
     },
     staleTime: 5 * 60 * 1000, // Cache for 5 minutes since settings rarely change
   });

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { useAddresses } from '@/app/[locale]/(account)/addresses/hooks/useAddresses';
 import { useForm } from 'react-hook-form';
@@ -43,7 +43,7 @@ export function CheckoutPageClient() {
   const { mutate: createOrder, isPending, error } = usePlaceOrder();
   const { mutate: applyCoupon, isPending: isApplyingCoupon } = useApplyCoupon();
   const { data: settings } = useSettings();
-  const { data: addressesData } = useAddresses();
+  const { data: addressesData, isLoading: isAddressesLoading } = useAddresses();
 
   const [couponInput, setCouponInput] = useState('');
   const [appliedCoupon, setAppliedCoupon] = useState<{ code: string; discount: number } | null>(null);
@@ -54,22 +54,27 @@ export function CheckoutPageClient() {
   const discount = appliedCoupon?.discount ?? 0;
   const total = Math.max(0, subtotal + shippingFee - discount);
 
-  const addressOptions = addressesData?.data?.map((addr) => ({
+  const addressOptions = addressesData?.map((addr) => ({
     label: `${addr.label || t('address', { defaultMessage: 'Address' })} - ${addr.street}`,
     value: addr.id,
   })) || [];
 
-  const defaultAddressId = addressOptions.length > 0 ? addressOptions[0].value : '';
-
   const form = useForm<CheckoutFormValues>({
     resolver: zodResolver(checkoutSchema),
     defaultValues: {
-      addressId: defaultAddressId,
+      addressId: '',
       paymentMethod: 'COD',
       couponCode: '',
       notes: '',
     },
   });
+
+  // Set default address when loaded
+  useEffect(() => {
+    if (addressOptions.length > 0 && !form.getValues('addressId')) {
+      form.setValue('addressId', addressOptions[0].value);
+    }
+  }, [addressOptions, form]);
 
   const handleApplyCoupon = () => {
     if (!couponInput.trim()) return;
@@ -93,6 +98,11 @@ export function CheckoutPageClient() {
     createOrder({
       ...values,
       couponCode: appliedCoupon?.code || undefined,
+      items: items.map(item => ({
+        productId: item.productId,
+        variantId: item.weightVariantId || null,
+        quantity: item.quantity,
+      })),
     });
   };
 
@@ -125,11 +135,19 @@ export function CheckoutPageClient() {
               <FormError message={(error as Error)?.message} />
 
               <SectionCard title={t('deliveryAddress', { defaultMessage: 'Delivery Address' })} description={t('deliveryDesc', { defaultMessage: 'Select where you want your order delivered.' })}>
-                <SelectField
-                  control={form.control}
-                  name="addressId"
-                  options={addressOptions}
-                />
+                {isAddressesLoading ? (
+                  <div className="h-10 bg-accent animate-pulse rounded-md" />
+                ) : addressOptions.length > 0 ? (
+                  <SelectField
+                    control={form.control}
+                    name="addressId"
+                    options={addressOptions}
+                  />
+                ) : (
+                  <div className="text-sm text-muted-foreground p-3 bg-accent/50 rounded-md">
+                    {t('noAddresses', { defaultMessage: 'No addresses saved. Please add an address from your account before checking out.' })}
+                  </div>
+                )}
               </SectionCard>
 
               <SectionCard title={t('paymentMethod', { defaultMessage: 'Payment Method' })}>

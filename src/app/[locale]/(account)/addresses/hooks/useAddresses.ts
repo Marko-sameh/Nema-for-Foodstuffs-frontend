@@ -12,7 +12,7 @@ export function useAddresses() {
   return useQuery({
     queryKey: ADDRESSES_MODULE_CONFIG.queryKeys.list(),
     queryFn: async () => {
-      return api.get<ApiResponse<Address[]>>(ADDRESSES_MODULE_CONFIG.endpoints.list);
+      return api.get<Address[]>(ADDRESSES_MODULE_CONFIG.endpoints.list);
     },
   });
 }
@@ -22,7 +22,7 @@ export function useCreateAddress() {
 
   return useMutation({
     mutationFn: async (data: AddressFormData) => {
-      return api.post<ApiResponse<Address>>(ADDRESSES_MODULE_CONFIG.endpoints.create, data);
+      return api.post<Address>(ADDRESSES_MODULE_CONFIG.endpoints.create, data);
     },
     onSuccess: () => {
       toast.success('Address added successfully');
@@ -39,7 +39,7 @@ export function useUpdateAddress() {
 
   return useMutation({
     mutationFn: async ({ id, data }: { id: string; data: AddressFormData }) => {
-      return api.put<ApiResponse<Address>>(ADDRESSES_MODULE_CONFIG.endpoints.update(id), data);
+      return api.put<Address>(ADDRESSES_MODULE_CONFIG.endpoints.update(id), data);
     },
     onSuccess: () => {
       toast.success('Address updated successfully');
@@ -56,7 +56,7 @@ export function useDeleteAddress() {
 
   return useMutation({
     mutationFn: async (id: string) => {
-      return api.delete<ApiResponse<null>>(ADDRESSES_MODULE_CONFIG.endpoints.delete(id));
+      return api.delete<null>(ADDRESSES_MODULE_CONFIG.endpoints.delete(id));
     },
     onSuccess: () => {
       toast.success('Address deleted successfully');

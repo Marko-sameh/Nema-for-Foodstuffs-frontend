@@ -8,8 +8,11 @@ import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { useLocaleFormat } from '@/lib/use-locale-format';
 import { useLocalizedName } from '@/lib/i18n-content';
+import { useAuthStore } from '@/store/authStore';
+import { useWishlistStore } from '@/store/wishlistStore';
+import { WishlistAPI } from '@/app/[locale]/(store)/wishlist/hooks/useWishlist';
 import { Button } from '@/components/ui/button';
-import { Plus } from 'lucide-react';
+import { Plus, Heart } from 'lucide-react';
 import Image from 'next/image';
 
 interface ProductCardProps {
@@ -25,6 +28,41 @@ export function ProductCard({ product }: ProductCardProps) {
   const [selectedVariant, setSelectedVariant] = useState(
     product.weightVariants?.[0] ?? null
   );
+
+  const { productIds, setWishlist } = useWishlistStore();
+  const isWishlisted = productIds.includes(product.id);
+
+  const handleToggleWishlist = async (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const user = useAuthStore.getState().user;
+    if (!user) {
+      toast.info(t('auth.loginRequired', { defaultMessage: 'Please login to manage your wishlist' }), {
+        action: { label: t('auth.login', { defaultMessage: 'Login' }), onClick: () => router.push('/login') },
+      });
+      return;
+    }
+
+    const newProductIds = isWishlisted 
+      ? productIds.filter(id => id !== product.id)
+      : [...productIds, product.id];
+    
+    setWishlist(newProductIds);
+
+    try {
+      if (isWishlisted) {
+        await WishlistAPI.removeFromWishlist(product.id);
+        toast.success(t('product.removedFromWishlist', { name: productName, defaultMessage: '{name} removed from wishlist' }));
+      } else {
+        await WishlistAPI.addToWishlist(product.id);
+        toast.success(t('product.addedToWishlist', { name: productName, defaultMessage: '{name} added to wishlist' }));
+      }
+    } catch (error) {
+      setWishlist(productIds);
+      toast.error(t('product.wishlistError', { defaultMessage: 'Could not update wishlist' }));
+    }
+  };
 
   const handleAddToCart = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -89,6 +127,17 @@ export function ProductCard({ product }: ProductCardProps) {
               </span>
             )}
           </div>
+
+          {/* Wishlist toggle */}
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={handleToggleWishlist}
+            aria-label={isWishlisted ? 'Remove from wishlist' : 'Add to wishlist'}
+            className="absolute top-3 end-3 h-8 w-8 rounded-full bg-background/70 backdrop-blur-sm text-muted-foreground transition-all hover:bg-background hover:text-red-500 hover:scale-110"
+          >
+            <Heart className={`h-4 w-4 transition-colors ${isWishlisted ? 'fill-red-500 text-red-500' : ''}`} />
+          </Button>
 
           {/* Quick add */}
           <Button

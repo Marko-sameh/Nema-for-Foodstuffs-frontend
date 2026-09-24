@@ -27,7 +27,7 @@ export function AdminOrderDetailClient({ id }: AdminOrderDetailClientProps) {
   
   const [status, setStatus] = useState<OrderStatus>('PENDING');
 
-  const order = response?.data;
+  const order = response;
 
   // Initialize status state when data loads
   useEffect(() => {

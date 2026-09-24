@@ -1,8 +1,10 @@
 {
   "title": "Checkout",
   "subtitle": "Complete your order details.",
+  "eyebrow": "Secure Checkout",
   "address": "Address",
   "emptyCart": "Your cart is empty",
+  "noAddresses": "No addresses saved. Please add an address from your account before checking out.",
   "browseProducts": "Browse Products",
   "deliveryAddress": "Delivery Address",
   "deliveryDesc": "Select where you want your order delivered.",
