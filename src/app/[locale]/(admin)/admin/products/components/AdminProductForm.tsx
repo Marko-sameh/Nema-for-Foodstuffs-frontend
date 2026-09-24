@@ -40,6 +40,7 @@ export function AdminProductForm({ initialData, onSubmit, isPending, error }: Ad
       stockInGrams: 0,
       isFeatured: false,
       isActive: true,
+      thumbnailUrl: '',
     },
   });
 
@@ -58,6 +59,7 @@ export function AdminProductForm({ initialData, onSubmit, isPending, error }: Ad
         stockInGrams: initialData.stockInGrams,
         isFeatured: initialData.isFeatured,
         isActive: initialData.isActive,
+        thumbnailUrl: initialData.thumbnailUrl ?? '',
       });
     }
   }, [initialData, form]);
@@ -132,6 +134,7 @@ export function AdminProductForm({ initialData, onSubmit, isPending, error }: Ad
         </div>
 
         <FormField control={form.control} name="description" label={t('form.description', { defaultMessage: 'Description' })} />
+        <FormField control={form.control} name="thumbnailUrl" label={t('form.thumbnailUrl', { defaultMessage: 'Thumbnail URL' })} placeholder="https://example.com/image.jpg" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <SwitchField 
